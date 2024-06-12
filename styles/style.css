@@ -3,13 +3,17 @@ h1 {
 }
 
 h2, ul {
-    color: #d2eaff;
+    color: #e9f5ff;
 }
 
 p {
-    color: #b1daff
+    color: #b1daff;
 }
 
 html {
-    background: cornflowerblue;
+    background: #6299ff;
+}
+
+a {
+    color: #8fcbff;
 }

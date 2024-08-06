@@ -1,4 +1,13 @@
-body, a {
-    background: #123456;
-    color: #f0f8ff;
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #333
+}
+
+p {
+    line-height: 1.5
 }

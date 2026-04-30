@@ -1,3 +1,16 @@
-html {
-    font-family: 'Lucida Sans';
+[data-theme='light'] {
+    --bg:   #eceeed;
+    --text: #101211; 
+}
+[data-theme='dark'] {
+    --bg:   #101211;
+    --text: #eceeed; 
+}
+
+/* html {
+    font-family: 'Arial';
+} */
+body {
+    background-color: var(--bg);
+    color:            var(--text);
 }

@@ -14,17 +14,21 @@
     <p>WORK IN PROGRESS</p>
 
     <button id="theme-toggle">
+      <span class="icon">🌙</span>
       <span class="label">Switch to Dark Mode</span>
     </button>
 
     <script>
       const btn = document.getElementById('theme-toggle');
+      const icon = btn.querySelector('.icon');
       const label = btn.querySelector('.label');
 
       btn.addEventListener('click', () => {
         const html = document.documentElement;
-        const isDark = html.getAttribute('data-theme') === 'dark';        
+        const isDark = html.getAttribute('data-theme') === 'dark';
+
         html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+        icon.textContent = isDark ? '🌙' : '☀️';
         label.textContent = isDark ? 'Switch to Dark Mode' : 'Switch to Light Mode';
       });
     </script>
